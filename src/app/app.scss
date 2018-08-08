@@ -16,3 +16,7 @@
 // automatically applied to the <body> element in the app.
 
 @import '../assets/styles/styles';
+
+.button-block {
+    width: calc(100% - 32px) !important;
+}
