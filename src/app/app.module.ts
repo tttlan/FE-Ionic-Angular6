@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
+import { PathLocationStrategy, LocationStrategy } from '@angular/common';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import {LoginModule} from '../pages/login/login.module';
+import { LoginModule } from '../pages/login/login.module';
 import { SignUpModule } from '../pages/sign-up/sign-up.module';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
