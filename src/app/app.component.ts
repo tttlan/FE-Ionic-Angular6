@@ -3,7 +3,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { LoginPage } from '../pages/login/login';
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+import { SignUpPage } from '../pages/sign-up/sign-up';
 import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -30,7 +30,7 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
+      { title: 'Sign Up', component: SignUpPage },
       { title: 'My First List', component: ListPage }
     ];
   }
