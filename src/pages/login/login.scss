@@ -1,0 +1,39 @@
+.login-page {
+    background: url(../assets/imgs/bgd.png) no-repeat center;
+    background-size:cover;
+
+    .button-block {
+        width: calc(100% - 32px);
+    }
+
+    .btn-login {
+        color:#FDFCFC;
+        border-radius:0px;
+    }
+
+    form {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .btn-login__group, 
+    .btn-login__options {
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-login__options {
+        justify-content: space-between;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+

@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar>
+        <div class="navbar-header">
+            <ion-title>Login</ion-title>
+        </div>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="login-page" padding="true" id="loginPage" title>
+    <form id="loginForm" name="loginForm">
+        <div class="avatar-block">
+            <img src="../../assets/imgs/avatar.png" class="avatar" alt="Avatar" />
+        </div>
+        <label class="item item-input input-text" id="txtUsername" name="userName" margin="true">
+            <input type="text" placeholder="Username">
+        </label>
+        <label class="item item-input input-pw" id="txtpassword" name="password" margin="true">
+            <input type="password" placeholder="Password">
+        </label>
+
+        <button id="btnLogin" class="button button-assertive button-block btn-login" margin="true">LOG IN</button>
+        <div class="btn-login__options" margin="true">
+            <div class="action">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <div class="action">
+                <a href="#">Sign up!</a>
+            </div>
+        </div>
+        <div class="btn-login__group">
+            <button id="btnFacebook" class="button button-positive button-small button-block icon-left btn-fb ion-social-hackernews-outline"
+                margin="true">Facebook</button>
+            <button id="btnTwitter" class="button button-calm button-small button-block icon-left ion-social-pinterest-outline btn-twitter"
+                margin="true">Twitter</button>
+            <button id="btnGoogle" class="button button-assertive button-small button-block icon-left ion-social-reddit" margin="true">Google</button>
+        </div>
+    </form>
+</ion-content>
