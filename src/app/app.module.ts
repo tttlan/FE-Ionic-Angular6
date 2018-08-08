@@ -3,10 +3,10 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { SignUpPage } from '../pages/sign-up/sign-up';
+import {LoginModule} from '../pages/login/login.module';
+import { SignUpModule } from '../pages/sign-up/sign-up.module';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
-import { LoginPage } from '../pages/login/login';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -14,22 +14,20 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    SignUpPage,
     ItemDetailsPage,
-    ListPage,
-    LoginPage
+    ListPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    LoginModule,
+    SignUpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    SignUpPage,
     ItemDetailsPage,
-    ListPage,
-    LoginPage
+    ListPage
   ],
   providers: [
     StatusBar,
