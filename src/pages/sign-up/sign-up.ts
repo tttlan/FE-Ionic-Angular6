@@ -11,7 +11,7 @@ import { PAGE_NAME } from '../../utils/PageName';
   templateUrl: 'sign-up.html'
 })
 export class SignUpPage {
-  constructor(public navCtrl: NavController) {
+  constructor(private navCtrl: NavController) {
 
   }
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { IonicPage } from 'ionic-angular';
+import { IonicPage, AlertController } from 'ionic-angular';
 
 @IonicPage({
     name: 'page-home'
@@ -11,4 +11,18 @@ import { IonicPage } from 'ionic-angular';
     templateUrl: 'home.html'
 })
 
-export class HomePage { }
+export class HomePage {
+    constructor(
+        private alertCtrl: AlertController
+    ) {
+        this.showAlert();
+    }
+
+    showAlert() {
+        this.alertCtrl.create({
+            title: 'Welcome!',
+            subTitle: 'Welcome to the Anime Chibi World !',
+            buttons: ['OK']
+        }).present();
+    }
+}
