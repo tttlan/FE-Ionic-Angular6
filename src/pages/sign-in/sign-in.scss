@@ -15,15 +15,24 @@
         text-align: center;
     }
     
-    .btn-login__group, 
-    .btn-login__options {
+    .btn-login__group {
         margin-top: 5%;
         display: flex;
         justify-content: center;
     }
 
     .btn-login__options {
-        justify-content: space-between;
+        position: relative;
+
+        .action:first-child {
+            position: absolute;
+            left: 0;
+        }
+
+        .action:last-child {
+            position: absolute;
+            right: 0;
+        }
 
         a {
             color: white;

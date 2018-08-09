@@ -15,7 +15,7 @@ export class HomePage {
     constructor(
         private alertCtrl: AlertController
     ) {
-        this.showAlert();
+        // this.showAlert();
     }
 
     showAlert() {
