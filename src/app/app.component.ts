@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 
 import { Platform, MenuController, Nav } from 'ionic-angular';
 
-import { LoginPage } from '../pages/login/login';
+import { SignInPage } from '../pages/sign-in/sign-in';
 import { SignUpPage } from '../pages/sign-up/sign-up';
 import { ListPage } from '../pages/list/list';
 
@@ -15,8 +15,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  // make LoginPage the root (or first) page
-  rootPage = LoginPage;
+  // make SignInPage the root (or first) page
+  rootPage = SignInPage;
   pages: Array<{ title: string, component: any }>;
 
   constructor(

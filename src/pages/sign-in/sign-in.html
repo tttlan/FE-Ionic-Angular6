@@ -1,7 +1,7 @@
 <ion-header>
     <ion-navbar>
         <div class="navbar-header">
-            <ion-title>Login</ion-title>
+            <ion-title>Sign In</ion-title>
         </div>
     </ion-navbar>
 </ion-header>
@@ -18,7 +18,7 @@
             <input type="password" placeholder="Password">
         </label>
 
-        <button id="btnLogin" class="button button-assertive button-small button-block btn-login" margin="true">LOG IN</button>
+        <button id="btnLogin" class="button button-assertive button-small button-block btn-login" margin="true" (tap)="signIn($event)">LOG IN</button>
         <div class="btn-login__options" margin="true">
             <div class="action">
                 <a href="#">Forgot Password?</a>

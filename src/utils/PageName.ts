@@ -1,4 +1,5 @@
 export const PAGE_NAME = {
     SignUpPage: 'page-sign-up',
-    LoginPage: 'page-login'
+    SignInPage: 'page-sign-in',
+    HomePage: 'page-home'
 }

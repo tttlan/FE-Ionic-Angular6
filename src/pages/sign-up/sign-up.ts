@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
+import { PAGE_NAME } from '../../utils/PageName';
 
 @IonicPage({
   name: 'page-sign-up'
@@ -10,7 +11,11 @@ import { IonicPage } from 'ionic-angular';
   templateUrl: 'sign-up.html'
 })
 export class SignUpPage {
-  constructor() {
+  constructor(public navCtrl: NavController) {
 
+  }
+
+  goToSignInPage() {
+    this.navCtrl.push(PAGE_NAME.SignInPage);
   }
 }
